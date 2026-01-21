@@ -27,7 +27,7 @@ cd ..
 ```
 
 ## Huggingface Llama3 access
-Llama3-8B-Instruct is a gated repo, which needs a formal request to get access to the model. Check out [https://huggingface.co/meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct).
+Llama3-8B-Instruct is a gated repo, which needs a formal request to get access to the model. Check out [https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct).
 After applying permission from Meta, you should be able to access the model, but you first need to enter your token in the file `huggingface_token.txt`.
 
 
