@@ -14,6 +14,7 @@ model_path=/models/Meta-Llama-3-8B-Instruct
 benign_dataset=data/gsm8k.json
 epochs=5
 alpha=300
+sink_token_position=0
 
 cd ../../
 PROJECT_ROOT=$(pwd)
@@ -72,6 +73,7 @@ for poison_ratio in "${POISON_RATIOS[@]}"; do
       --sample_num "${sample_num}" \
       --poison_ratio "${poison_ratio}" \
       --label_smoothing_factor 0 \
+      --sink_token_position ${sink_token_position} \
       --benign_dataset "${benign_dataset}" \
       --alpha ${alpha}
 
