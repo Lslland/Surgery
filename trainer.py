@@ -31,7 +31,7 @@ class SurgeryFinetuningTrainer(Trainer):
         self.step_num = 0
         self.EPSILON = 0.01
         random.seed(43)
-        self.SINK_TOKEN_INDEX = 0
+        self.SINK_TOKEN_INDEX = self.args.sink_token_position
         num_heads = self.model.config.num_attention_heads
         num_layers = self.model.config.num_hidden_layers
         # num_heads = self.model.config.text_config.num_attention_heads
