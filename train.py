@@ -422,6 +422,8 @@ def train():
     parser.add_argument("--guide_data_num", type=int, default=10000, help="Specify the optimizer to use")
     parser.add_argument("--finetuning_guide_data_num", type=int, default=0, help="Specify the optimizer to use")
     parser.add_argument("--system_prompt", type=str, default="You are a helpful assistant.", help="Specify the optimizer to use")
+    parser.add_argument("--sink_token_position", type=int, default=0, help="sink_token_position")
+    
     
     # Set the seed for random module
     seed = 43
@@ -458,6 +460,7 @@ def train():
     data_args.system_prompt = extra_args.system_prompt
     training_args.guide_data_num = extra_args.guide_data_num
     training_args.rho = extra_args.rho
+    training_args.sink_token_position=extra_args.sink_token_position
     training_args.finetune_step = extra_args.finetune_step
     training_args.alignment_step = extra_args.alignment_step
     training_args.alpha = extra_args.alpha
