@@ -45,5 +45,5 @@ bash surgery_poison_ratio.sh
 For comparison, the baseline SFT alignment can be run with the following code.
 ```
 cd script/finetune
-bash  sft_poison_ratio.sh 
+bash sft_poison_ratio.sh 
 ```
